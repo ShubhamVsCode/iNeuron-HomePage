@@ -14,7 +14,7 @@ import TestimonialCard from "./TestimonialCard";
 import ShowcaseCard from "./ShowcaseCard";
 const Students = () => {
   return (
-    <div className="h-screen text-center  -mt-1">
+    <div className="h-screen text-center -mt-3">
       <h1 className="text-5xl text-white group bg-ineuron font-semibold py-12 ">
         "Pure Hardwork, No Shortcuts!"
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>

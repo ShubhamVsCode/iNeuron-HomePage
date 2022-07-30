@@ -37,7 +37,7 @@ const Navbar = () => {
           </svg>
           <input
             type="text"
-            className="pl-2 w-[14vw] search__input placeholder:overflow-visible py-3 rounded-full focus-visible:outline-none"
+            className="pl-2 w-[14vw] search__input placeholder:overflow-visible py-1 rounded-full focus-visible:outline-none"
             placeholder="What do you want to learn?"
           />
         </div>

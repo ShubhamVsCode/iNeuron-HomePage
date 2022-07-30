@@ -19,7 +19,7 @@ const HeroSection = () => {
           affordable courses across technologies.
         </p>
         <button className="btn btn__primary hover:px-12 duration-200">
-          Get Started
+          <a href="#getStarted">Get Started</a>
         </button>
       </div>
       <div className="right-section w-1/2">

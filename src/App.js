@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection.js";
 import Students from "./components/Students.js";
+import WhatYouLearn from "./components/WhatYouLearn";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Students />
+      <WhatYouLearn />
     </div>
   );
 }
