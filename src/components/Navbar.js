@@ -1,5 +1,6 @@
 import "../css/btn.css";
 import "../css/dropdown.css";
+import "../css/search.css";
 
 import logo from "../assets/ineuron-logo.png";
 import dropdown from "../assets/dropdown.png";
@@ -10,7 +11,7 @@ const Navbar = () => {
       <div className="navbar flex justify-between items-center py-6 mx-24">
         <img className="h-10" src={logo} alt="" />
 
-        <div className="search-box  rounded-full flex border-2 items-center px-3 border-ineuron ">
+        <div className="search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -36,7 +37,7 @@ const Navbar = () => {
           </svg>
           <input
             type="text"
-            className="pl-2 w-[14vw] placeholder:overflow-visible py-3 rounded-full focus-visible:outline-none"
+            className="pl-2 w-[14vw] search__input placeholder:overflow-visible py-3 rounded-full focus-visible:outline-none"
             placeholder="What do you want to learn?"
           />
         </div>
@@ -45,7 +46,7 @@ const Navbar = () => {
           <button className="btn btn__primary">Sign in</button>
         </div>
       </div>
-      <ul className="navbar__2 flex text-ineuron items-center justify-between space-x-16 max-w-fit m-auto">
+      <ul className="navbar__2 flex text-ineuron items-center justify-between space-x-14 max-w-fit m-auto">
         <li className="flex items-center drop">
           Courses <img className="w-3 h-3 ml-1" src={dropdown} alt="" />
           <div className="dropdownContain">
