@@ -1,0 +1,35 @@
+.btn {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn__primary {
+  box-shadow: inset 0.2rem 0.2rem 1rem #2f65ac,
+    inset -0.2rem -0.2rem 1rem #233c7b, 0.3rem 0.3rem 0.6rem #c8d0e7,
+    -0.2rem -0.2rem 0.5rem #ffffff;
+  color: #e4ebf5;
+  background: #2f50a4;
+}
+
+.btn__primary:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem #233c7b,
+    inset -0.2rem -0.2rem 1rem #8abdff;
+}
+
+.btn__secondary {
+  color: #233c7b;
+  background: #e4ebf5;
+}
+
+.btn__secondary:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+    inset -0.2rem -0.2rem 0.5rem #fff;
+}
