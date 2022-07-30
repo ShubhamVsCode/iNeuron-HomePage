@@ -7,7 +7,7 @@ import dropdown from "../assets/dropdown.png";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar flex justify-between items-center my-6 mx-24">
+      <div className="navbar flex justify-between items-center py-6 mx-24">
         <img className="h-10" src={logo} alt="" />
 
         <div className="search-box  rounded-full flex border-2 items-center px-3 border-ineuron ">
