@@ -1,6 +1,17 @@
 import courseImg from "../assets/online-study.png";
 import globe from "../assets/table-globe.png";
 import hat from "../assets/graduation-hat.png";
+import person1 from "../assets/person1.jpg";
+import person2 from "../assets/person2.jpg";
+import person3 from "../assets/person3.jpg";
+import person4 from "../assets/person4.jpg";
+import js from "../assets/js.png";
+import ts from "../assets/ts.png";
+import css from "../assets/css.png";
+import ether from "../assets/ether.png";
+
+import TestimonialCard from "./TestimonialCard";
+import ShowcaseCard from "./ShowcaseCard";
 const Students = () => {
   return (
     <div className="h-screen text-center  -mt-1">
@@ -10,33 +21,21 @@ const Students = () => {
       </h1>
 
       <div className="card-container mt-20 justify-between mx-40 flex">
-        <div className="card rounded-2xl shadow-xl hover:shadow-md duration-300 group">
-          <img
-            className="w-1/2 mx-auto group-hover:scale-105 duration-300 ease-in-out"
-            src={hat}
-            alt=""
-          />
-          <p className="text-5xl font-bold mt-5 mb-2 text-gray-800">10000+</p>
-          <p className="text-2xl mb-5 text-gray-500">Jobs Interview Cracked</p>
-        </div>
-        <div className="card rounded-2xl shadow-xl duration-300 hover:shadow-md group ">
-          <img
-            className="w-1/2 mx-auto group-hover:scale-105 duration-300 ease-in-out"
-            src={courseImg}
-            alt=""
-          />
-          <p className="text-5xl font-bold mt-5 mb-2 text-gray-800">400+</p>
-          <p className="text-2xl mb-5 text-gray-500">Different Courses</p>
-        </div>
-        <div className="card rounded-2xl shadow-xl duration-300 hover:shadow-md group">
-          <img
-            className="w-1/2 mx-auto group-hover:scale-105 duration-300 ease-in-out"
-            src={globe}
-            alt=""
-          />
-          <p className="text-5xl font-bold mt-5 mb-2 text-gray-800">60+</p>
-          <p className="text-2xl mb-5 text-gray-500">Available Countries</p>
-        </div>
+        <ShowcaseCard
+          Heading="10000+"
+          Description="Job Interview Cracked"
+          Image={hat}
+        />
+        <ShowcaseCard
+          Heading="400+"
+          Description="Different Courses"
+          Image={courseImg}
+        />
+        <ShowcaseCard
+          Heading="70+"
+          Description="Available Countries"
+          Image={globe}
+        />
       </div>
 
       <h1 className="text-5xl text-[#343434]  mt-28 group font-semibold py-12 ">
@@ -44,10 +43,31 @@ const Students = () => {
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
-      <div className="testimonial-card-container  flex items-center justify-between">
-        <div className="testimonial-card bg-black"></div>
-        <div className="testimonial-card bg-black"></div>
-        <div className="testimonial-card bg-black"></div>
+      <div className="testimonial-card-container mx-40 space-x-20 flex items-center justify-between mt-24">
+        <TestimonialCard
+          image={person1}
+          title="Johnas Sam"
+          description="I was following Krish Sir YouTube channel for more than 2-3 year."
+          dev={js}
+        />
+        <TestimonialCard
+          image={person2}
+          title="Richard"
+          description="I was following Krish Sir YouTube channel for more than 2-3 year."
+          dev={css}
+        />
+        <TestimonialCard
+          image={person3}
+          title="Alex Andres"
+          description="I was following Krish Sir YouTube channel for more than 2-3 year."
+          dev={ether}
+        />
+        <TestimonialCard
+          image={person4}
+          title="Amanda Richard"
+          description="I was following Krish Sir YouTube channel for more than 2-3 year."
+          dev={ts}
+        />
       </div>
     </div>
   );

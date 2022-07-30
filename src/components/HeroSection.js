@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div className="flex h-[86vh] items-center">
       <div className="ml-40">
-        <p className="font-bold text-lg text-[#2f2f2f]">
+        <p className="font-semibold text-lg text-[#2f2f2f]">
           Learn from the best of Industry
         </p>
         <div className="h-[12px] -mt-[14px] -ml-1 w-52  bg-[#1a2fce3f]"></div>
@@ -18,7 +18,9 @@ const HeroSection = () => {
           Digital entrepreneurs, Youtubers and content creators provide
           affordable courses across technologies.
         </p>
-        <button className="btn btn__primary">Get Started</button>
+        <button className="btn btn__primary hover:px-12 duration-200">
+          Get Started
+        </button>
       </div>
       <div className="right-section w-1/2">
         <img className="absolute right-0 top-0 h-full -z-10" src={bg} alt="" />
