@@ -12,8 +12,7 @@ import ether from "../assets/ether.png";
 
 import TestimonialCard from "./TestimonialCard";
 import ShowcaseCard from "./ShowcaseCard";
-import gsap from "gsap";
-import { useEffect } from "react";
+
 const Students = () => {
   return (
     <div className="h-screen -mt-3 text-center">

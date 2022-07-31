@@ -1,7 +1,6 @@
 import "../css/Hero.css";
 import bg from "../assets/bg.png";
 import hero from "../assets/hero.png";
-import line from "../assets/line.png";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
