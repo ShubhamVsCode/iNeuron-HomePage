@@ -4,14 +4,24 @@ import "../css/search.css";
 
 import logo from "../assets/ineuron-logo.png";
 import dropdown from "../assets/dropdown.png";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const Navbar = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "#searchBox",
+      { opacity: 0 },
+      { opacity: 1, duration: 0.8, ease: "power1" }
+    );
+  }, []);
+
   return (
     <div>
-      <div className="navbar flex justify-between items-center py-6 mx-24">
-        <img className="h-10" src={logo} alt="" />
+      <div className="flex items-center justify-between py-6 pl-6 mx-32 navbar">
+        <img className="h-10" id="logo" src={logo} alt="" />
 
-        <div className="search">
+        <div id="searchBox" className="search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -41,12 +51,12 @@ const Navbar = () => {
             placeholder="What do you want to learn?"
           />
         </div>
-        <div className="nav__buttons flex space-x-7">
+        <div className="flex nav__buttons space-x-7">
           <button className="btn btn__secondary">Sign Up</button>
           <button className="btn btn__primary">Sign in</button>
         </div>
       </div>
-      <ul className="navbar__2 flex text-ineuron items-center justify-between space-x-14 max-w-fit m-auto">
+      <ul className="flex items-center justify-between m-auto navbar__2 text-ineuron space-x-14 max-w-fit">
         <li className="flex items-center drop">
           Courses <img className="w-3 h-3 ml-1" src={dropdown} alt="" />
           <div className="dropdownContain">
