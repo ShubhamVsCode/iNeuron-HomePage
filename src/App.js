@@ -6,8 +6,10 @@ import WhatYouLearn from "./components/WhatYouLearn";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <HeroSection />
+      <div className="header">
+        <Navbar />
+        <HeroSection />
+      </div>
       <Students />
       <WhatYouLearn />
     </div>

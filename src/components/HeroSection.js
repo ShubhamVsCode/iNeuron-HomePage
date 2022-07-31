@@ -1,5 +1,4 @@
 import "../css/Hero.css";
-import bg from "../assets/bg.png";
 import hero from "../assets/hero.png";
 import { gsap } from "gsap";
 import { useEffect } from "react";
@@ -55,12 +54,6 @@ const HeroSection = () => {
         </button>
       </div>
       <div className="w-1/2 right-section">
-        <img
-          className="absolute top-0 right-0 h-full -z-10"
-          id="backgroundImage"
-          src={bg}
-          alt=""
-        />
         <img
           className="absolute top-60 right-20 w-[55%]"
           id="heroImage"

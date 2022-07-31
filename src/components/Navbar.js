@@ -10,6 +10,11 @@ import gsap from "gsap";
 const Navbar = () => {
   useEffect(() => {
     gsap.fromTo(
+      "#logo",
+      { opacity: 1, y: -10, duration: 0.3 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
+    gsap.fromTo(
       "#searchBox",
       { opacity: 0 },
       { opacity: 1, duration: 0.8, ease: "power1" }

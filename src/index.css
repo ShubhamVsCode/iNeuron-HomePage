@@ -29,3 +29,10 @@ code {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.header {
+  background-image: url(./assets/bg.png);
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
