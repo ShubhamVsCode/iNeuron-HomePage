@@ -1,20 +1,51 @@
 import "../css/Hero.css";
 import hero from "../assets/hero.png";
+import logo from "../assets/ineuron-logo.png";
+
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
 const HeroSection = () => {
   useEffect(() => {
     const tl = gsap.timeline({ ease: "power2" });
+
+    gsap.to(".logo", {
+      opacity: 0,
+      y: "-100%",
+      duration: 1,
+      delay: 0.4,
+      ease: "power1",
+    });
+    gsap.to(".black-box", {
+      y: "100%",
+      opacity: 0.6,
+      duration: 0.3,
+      ease: "power1",
+      display: "none",
+    });
+
     tl.fromTo(
       "#heroImage",
-      { opacity: 0, y: "0" },
-      { opacity: 1, y: "20", duration: 0.2, ease: "power1" }
+      {
+        opacity: 0.8,
+        y: "0",
+        x: "20",
+      },
+      {
+        opacity: 1,
+        y: "0",
+        x: "0",
+        duration: 0.9,
+        ease: "back",
+      },
+      "+=0.4"
     );
+
     gsap.fromTo(
       "#heroHeading",
-      { opacity: 0.6, x: "-30" },
-      { opacity: 1, x: "0" }
+      { opacity: 0.6, y: "-10" },
+      { opacity: 1, y: "0", duration: 0.3 },
+      "-=1.2"
     );
     gsap.fromTo(
       "#getStartedBtn",
@@ -60,6 +91,10 @@ const HeroSection = () => {
           src={hero}
           alt=""
         />
+        <div className="absolute top-0 left-0 flex items-center justify-center bg-[#fff] w-full h-screen opacity-1 logo">
+          <img src={logo} className="h-60" alt="" srcset="" />
+        </div>
+        <div className="absolute top-0 left-0 flex items-center justify-center w-full h-screen bg-ineuron black-box"></div>
       </div>
     </div>
   );
