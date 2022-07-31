@@ -14,7 +14,7 @@ const ShowcaseCard = ({ Heading, Description, Image }) => {
       <p className="mt-5 mb-2 text-5xl font-bold duration-300 group-hover:scale-110 group-hover:-translate-y-2 ease-in-outtext-gray-800 ">
         {Heading}
       </p>
-      <p className="mb-5 text-2xl text-gray-500">{Description}</p>
+      <p className="mb-5 text-xl text-gray-500">{Description}</p>
     </div>
   );
 };
