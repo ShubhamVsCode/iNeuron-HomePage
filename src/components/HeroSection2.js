@@ -1,5 +1,4 @@
 import "../css/Hero.css";
-import hero from "../assets/hero.png";
 import logo from "../assets/ineuron-logo.png";
 
 import { gsap } from "gsap";
@@ -7,8 +6,6 @@ import { useEffect } from "react";
 
 const HeroSection = () => {
   useEffect(() => {
-    const tl = gsap.timeline({ ease: "power2" });
-
     gsap.to(".logo", {
       opacity: 0,
       y: "-100%",
@@ -41,9 +38,9 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="flex items-center max-w-6xl py-32 mx-auto my-auto text-center ">
-      <div className="mx-auto">
-        <p className="font-semibold  text-lg text-[#2f2f2f]">
+    <div className="flex items-center max-w-6xl py-32 mx-auto my-auto text-center sm:py-10 ">
+      <div className="mx-auto ">
+        <p className="font-semibold text-lg sm:mb-4 text-[#2f2f2f]">
           Learn from the best of Industry
           <div
             id="blueDiv"
@@ -51,13 +48,13 @@ const HeroSection = () => {
           ></div>
         </p>
         <h1
-          className="text-8xl gradient-text leading-none relative  -ml-[4px] my-5 font-bold  font-[Montserrat]"
+          className="text-8xl gradient-text sm:leading-snug sm:font-bold sm:uppercase leading-none relative sm:text-5xl -ml-[4px] sm:m-auto my-5 font-bold  font-[Montserrat]"
           id="heroHeading"
         >
           Highest in quality, <br />
-          <span className="text-7xl">affordable in Price</span>
+          <span className="text-7xl sm:text-5xl ">affordable in Price</span>
         </h1>
-        <p className="text-lg w-2/3 mx-auto leading-snug text-[#494949] mb-7">
+        <p className="text-lg sm:mt-5 sm:text-sm w-2/3 mx-auto leading-snug text-[#494949] mb-7">
           Digital entrepreneurs, Youtubers and content creators provide
           affordable courses across technologies.
         </p>
@@ -71,7 +68,12 @@ const HeroSection = () => {
 
       <div className="right-section">
         <div className="absolute top-0 left-0 flex items-center justify-center bg-[#fff] w-full h-screen opacity-1 logo">
-          <img src={logo} className="h-60" alt="" srcset="" />
+          <img
+            src={logo}
+            className="h-60 sm:h-auto sm:mx-10"
+            alt=""
+            srcset=""
+          />
         </div>
         <div className="absolute top-0 left-0 flex items-center justify-center w-full h-screen bg-ineuron black-box"></div>
       </div>
