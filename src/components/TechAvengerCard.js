@@ -18,11 +18,11 @@ const TechAvengerCard = ({ image, name, post, className }) => {
         alt=""
       />
       <img
-        className="absolute top-0 w-56 duration-500 ease-in-out bg-purple-100 rounded-full shadow-md group-hover:-top-10 sm:shadow-purple-500 sm:-top-10 sm:bg-purple-300 group-hover:shadow-2xl group-hover:bg-purple-300 group-hover:shadow-purple-500 shadow-purple-400 "
+        className="absolute top-0 w-56 duration-500 ease-in-out bg-purple-100 rounded-full shadow-md dark:bg-darkSecBackgroundColor dark:group-hover:bg-purple-800 group-hover:-top-10 sm:shadow-purple-500 sm:-top-10 sm:bg-purple-300 group-hover:shadow-2xl group-hover:bg-purple-300 group-hover:shadow-purple-500 shadow-purple-400 "
         src={image}
         alt=""
       />
-      <h1 className="absolute bottom-0 text-2xl font-semibold text-center duration-300 opacity-0 text-ineuron sm:opacity-100 group-hover:opacity-100 sm:translate-y-2 group-hover:translate-y-2">
+      <h1 className="absolute bottom-0 text-2xl font-semibold text-center duration-300 opacity-0 dark:text-darkTextColor text-ineuron sm:opacity-100 group-hover:opacity-100 sm:translate-y-2 group-hover:translate-y-2">
         {name}
       </h1>
       <p className="absolute text-lg font-bold text-gray-500 uppercase duration-300 group-hover:text-gray-400 group-hover:font-semibold -bottom-10">

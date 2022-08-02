@@ -11,8 +11,10 @@ import TechAvengerCard from "./TechAvengerCard";
 
 const TechAvengers = () => {
   return (
-    <div className={`pt-20 techAvengerBg my-20`}>
-      <h1 className="text-5xl sm:text-3xl text-[#343434] mx-auto text-center group font-semibold ">
+    <div
+      className={`pt-24 pb-16 dark:text-darkTextColor dark:bg-darkBackgroundColor techAvengerBg `}
+    >
+      <h1 className="text-5xl dark:text-darkTextColor sm:text-3xl text-[#343434] mx-auto text-center group font-semibold ">
         "Tech Avengers"
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>

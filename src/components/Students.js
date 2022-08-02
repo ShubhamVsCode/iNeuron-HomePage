@@ -15,13 +15,13 @@ import ShowcaseCard from "./ShowcaseCard";
 
 const Students = () => {
   return (
-    <div className="my-10 text-center ">
-      <h1 className="py-12 text-5xl font-semibold sm:text-3xl text-ineuron group ">
+    <div className="my-0 text-center dark:bg-darkBackgroundColor ">
+      <h1 className="py-16 text-5xl font-semibold dark:text-darkTextColor sm:text-3xl text-ineuron group ">
         "Pure Hardwork, No Shortcuts!"
-        <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
+        <div className="h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
-      <div className="flex justify-between mx-40 mt-20 sm:mt-5 sm:flex-col sm:mx-7 sm:gap-10 sm: card-container">
+      <div className="flex justify-between mx-40 mt-10 sm:mt-5 sm:flex-col sm:mx-7 sm:gap-10 sm: card-container">
         <ShowcaseCard
           Heading="10000+"
           Description="Job Interview Cracked"
@@ -39,7 +39,7 @@ const Students = () => {
         />
       </div>
 
-      <h1 className="text-5xl text-[#343434] sm:text-3xl mt-28 group font-semibold py-12 ">
+      <h1 className="text-5xl text-[#343434] dark:text-darkTextColor sm:text-3xl mt-28 group font-semibold py-12 ">
         "Hall of fame"
         <div className="h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>

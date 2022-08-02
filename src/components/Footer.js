@@ -8,7 +8,7 @@ import facebook from "../assets/footer/facebook.png";
 
 const Footer = () => {
   return (
-    <div className="box-border flex justify-around w-full gap-20 px-32 py-16 mt-40 text-white sm:px-5 sm:flex-col footer bg-ineuron h-96 sm:h-auto">
+    <div className="box-border flex justify-around w-full gap-20 px-32 py-16 text-white sm:px-5 sm:flex-col footer bg-ineuron h-96 sm:h-auto">
       <div className="space-y-10 sm:w-auto w-[26rem]">
         <div className="flex items-center justify-between">
           <img src={logo} className="h-10" alt="" />
