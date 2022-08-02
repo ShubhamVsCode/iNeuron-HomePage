@@ -4,7 +4,7 @@ import "../css/search.css";
 
 import logo from "../assets/ineuron-logo.png";
 import dropdown from "../assets/dropdown.png";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 
 const Navbar = () => {
@@ -21,6 +21,27 @@ const Navbar = () => {
     );
   }, []);
 
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
   return (
     <div>
       <div className="flex items-center justify-between py-6 mx-32 sm:py-4 sm:mx-auto sm:w-screen navbar">
@@ -60,6 +81,13 @@ const Navbar = () => {
         <div className="flex nav__buttons space-x-7 sm:hidden">
           <button className="btn btn__secondary">Sign Up</button>
           <button className="btn btn__primary">Sign in</button>
+          <button
+            type="button"
+            onClick={handleThemeSwitch}
+            className="fixed z-10 p-2 text-lg duration-500 bg-indigo-900 rounded-full  right-2 top-2"
+          >
+            {theme === "dark" ? "🌞" : "🌙"}
+          </button>
         </div>
       </div>
       <ul className="flex items-center justify-between m-auto sm:hidden navbar__2 text-ineuron space-x-14 max-w-fit">
@@ -105,3 +133,46 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+// var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+
+// // Change the icons inside the button based on previous settings
+// if (
+//   localStorage.getItem("color-theme") === "dark" ||
+//   (!("color-theme" in localStorage) &&
+//     window.matchMedia("(prefers-color-scheme: dark)").matches)
+// ) {
+//   themeToggleLightIcon.classList.remove("hidden");
+// } else {
+//   themeToggleDarkIcon.classList.remove("hidden");
+// }
+
+// var themeToggleBtn = document.getElementById("theme-toggle");
+
+// themeToggleBtn.addEventListener("click", function () {
+//   // toggle icons inside button
+//   themeToggleDarkIcon.classList.toggle("hidden");
+//   themeToggleLightIcon.classList.toggle("hidden");
+
+//   // if set via local storage previously
+//   if (localStorage.getItem("color-theme")) {
+//     if (localStorage.getItem("color-theme") === "light") {
+//       document.documentElement.classList.add("dark");
+//       localStorage.setItem("color-theme", "dark");
+//     } else {
+//       document.documentElement.classList.remove("dark");
+//       localStorage.setItem("color-theme", "light");
+//     }
+
+//     // if NOT set via local storage previously
+//   } else {
+//     if (document.documentElement.classList.contains("dark")) {
+//       document.documentElement.classList.remove("dark");
+//       localStorage.setItem("color-theme", "light");
+//     } else {
+//       document.documentElement.classList.add("dark");
+//       localStorage.setItem("color-theme", "dark");
+//     }
+//   }
+// });

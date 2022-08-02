@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
         ineuron: "#233C7B",
+        darkBackgroundColor: "#1f1b2c",
+        darkSecBackgroundColor: "#524875",
+        darkTextColor: "#EEEEEE",
+        darkSecTextColor: "#dddddd",
       },
 
       screens: {

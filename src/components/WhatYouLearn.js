@@ -8,18 +8,18 @@ import NuemorphicCard from "./NeumorphicCard";
 
 const WhatYouLearn = () => {
   return (
-    <div className="sm:" id="getStarted">
-      <h1 className="text-5xl text-[#343434] mt-16 sm:mt-0 sm:text-3xl pt-8 sm:pt-0 mx-auto text-center group font-semibold  ">
+    <div className="dark:bg-darkBackgroundColor" id="getStarted">
+      <h1 className="text-5xl dark:text-darkTextColor text-[#343434] pt-24 sm:mt-0 sm:text-3xl sm:pt-8 mx-auto text-center group font-semibold  ">
         "What you will learn"
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
       {/* flex items-center mx-auto justify-center bg-slate-300 */}
 
-      <div className="flex justify-center mx-auto mt-10 sm:hidden">
-        <div class="segmented-control">
+      <div className="flex justify-center mx-auto mt-10 dark:hidden dark:shadow-none sm:hidden">
+        <div class="segmented-control dark:shadow-none ">
           <input type="radio" name="radio" id="tab-1" />
-          <label htmlFor="tab-1" class="segmented-control__1">
+          <label htmlFor="tab-1" class=" segmented-control__1">
             <p>Live Programs</p>
           </label>
 
