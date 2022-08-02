@@ -5,19 +5,23 @@ import Students from "./components/Students.js";
 import WhatYouLearn from "./components/WhatYouLearn";
 import Products from "./components/Products";
 import TechAvengers from "./components/TechAvengers.js";
+import Patner from "./components/Patner.js";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <div className=" header">
+      <div className="w-full h-screen header">
         <Navbar />
-        <HeroSection />
-        {/* <HeroSection2 /> */}
+        {/* <HeroSection /> */}
+        <HeroSection2 />
       </div>
       <Students />
       <WhatYouLearn />
       <Products />
       <TechAvengers />
+      <Patner />
+      <Footer />
     </div>
   );
 }

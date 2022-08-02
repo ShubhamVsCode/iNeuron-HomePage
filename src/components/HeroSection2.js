@@ -24,28 +24,11 @@ const HeroSection = () => {
       display: "none",
     });
 
-    // tl.fromTo(
-    //   "#heroImage",
-    //   {
-    //     opacity: 0.8,
-    //     y: "0",
-    //     x: "20",
-    //   },
-    //   {
-    //     opacity: 1,
-    //     y: "0",
-    //     x: "0",
-    //     duration: 0.9,
-    //     ease: "back",
-    //   },
-    //   "+=0.4"
-    // );
-
     gsap.fromTo(
       "#heroHeading",
-      { opacity: 0.6, y: "-10" },
+      { opacity: 0, y: "-10" },
       { opacity: 1, y: "0", duration: 0.3 },
-      "-=1.2"
+      "-=0.9"
     );
     gsap.fromTo(
       "#getStartedBtn",
@@ -58,8 +41,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="flex items-center max-w-5xl mx-auto my-auto text-center ">
-      <div className="">
+    <div className="flex items-center max-w-6xl py-32 mx-auto my-auto text-center ">
+      <div className="mx-auto">
         <p className="font-semibold  text-lg text-[#2f2f2f]">
           Learn from the best of Industry
           <div
@@ -68,10 +51,11 @@ const HeroSection = () => {
           ></div>
         </p>
         <h1
-          className="text-7xl gradient-text relative -ml-[4px] my-5 font-bold  font-[Montserrat] leading-tight"
+          className="text-8xl gradient-text leading-none relative  -ml-[4px] my-5 font-bold  font-[Montserrat]"
           id="heroHeading"
         >
-          Highest in quality, affordable in Price
+          Highest in quality, <br />
+          <span className="text-7xl">affordable in Price</span>
         </h1>
         <p className="text-lg w-2/3 mx-auto leading-snug text-[#494949] mb-7">
           Digital entrepreneurs, Youtubers and content creators provide
