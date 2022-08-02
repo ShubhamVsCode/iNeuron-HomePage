@@ -6,6 +6,7 @@ import taxila from "../assets/partnerImage/taxila.svg";
 import bank from "../assets/partnerImage/bank.png";
 const Patner = () => {
   return (
+
     <div className="py-36 dark:bg-darkBackgroundColor">
       <div className="flex items-center justify-between h-64 p-12 px-20 mx-auto shadow-lg sm:flex-col dark:shadow-lg dark:shadow-slate-800 sm:p-4 shadow-blue-200 rounded-3xl partner-background sm:h-40 sm:m-4 max-w-7xl">
         <div>
@@ -25,6 +26,7 @@ const Patner = () => {
           <img src={gim} alt="" />
           <img src={malnad} alt="" />
         </div>
+
       </div>
     </div>
   );
