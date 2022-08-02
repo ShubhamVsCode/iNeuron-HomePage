@@ -15,8 +15,8 @@ import ShowcaseCard from "./ShowcaseCard";
 
 const Students = () => {
   return (
-    <div className="h-screen -mt-3 text-center">
-      <h1 className="py-12 text-5xl font-semibold text-white group bg-ineuron ">
+    <div className="h-screen my-10 text-center">
+      <h1 className="py-12 text-5xl font-semibold text-ineuron group ">
         "Pure Hardwork, No Shortcuts!"
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
@@ -44,7 +44,7 @@ const Students = () => {
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
-      <div className="flex items-center justify-between mx-40 mt-24 space-x-20 testimonial-card-container">
+      <div className="flex items-center justify-between mx-40 mt-24 space-x-20 sm:hidden sm:w-screen testimonial-card-container">
         <TestimonialCard
           image={person1}
           title="Johnas Sam"

@@ -25,14 +25,31 @@ code {
     monospace;
 }
 .gradient-text {
-  background: -webkit-linear-gradient(45deg, #0b3288, #0ad4db);
+  background: -webkit-linear-gradient(45deg, #184096, #683dea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .header {
-  background-image: url(./assets/bg.png);
+  background-image: url(./assets/abstract.jpg);
   background-position: top 0 right 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height: 100vh;
+}
+
+.partner-background {
+  background-image: url(./assets/partnerImage/company.jpg);
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background-image: url(./assets/partnerImage/footerBg.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

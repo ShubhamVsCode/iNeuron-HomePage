@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between py-6 pl-6 mx-32 navbar">
+      <div className="flex items-center justify-between py-6 pl-6 mx-32 sm:w-screen sm:bg-black navbar">
         <img className="h-10" id="logo" src={logo} alt="" />
 
         <div id="searchBox" className="search">
@@ -32,6 +32,7 @@ const Navbar = () => {
             width="20"
             height="20"
             viewBox="0 0 20 20"
+            className="sm:hidden"
             fill="none"
           >
             <g clip-path="url(#clip0)">
@@ -52,7 +53,7 @@ const Navbar = () => {
           </svg>
           <input
             type="text"
-            className="pl-2 w-[14vw] search__input placeholder:overflow-visible py-1 rounded-full focus-visible:outline-none"
+            className="max-w-xl py-1 pl-2 rounded-full sm:hidden search__input placeholder:overflow-visible focus-visible:outline-none"
             placeholder="What do you want to learn?"
           />
         </div>
@@ -61,7 +62,7 @@ const Navbar = () => {
           <button className="btn btn__primary">Sign in</button>
         </div>
       </div>
-      <ul className="flex items-center justify-between m-auto navbar__2 text-ineuron space-x-14 max-w-fit">
+      <ul className="flex items-center justify-between m-auto sm:hidden navbar__2 text-ineuron space-x-14 max-w-fit">
         <li className="flex items-center drop">
           Courses <img className="w-3 h-3 ml-1" src={dropdown} alt="" />
           <div className="dropdownContain">
