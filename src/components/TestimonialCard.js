@@ -1,8 +1,8 @@
 const TestimonialCard = ({ image, title, description, dev }) => {
   return (
-    <div className="relative testimonial-card hover:shadow-2xl hover:bg-[#d2ebff] group duration-300 shadow-md mb-10 bg-[#dcf0ff] p-10 rounded-xl">
+    <div className="relative testimonial-card hover:shadow-2xl hover:bg-[#d2ebff] group duration-300 shadow-md mb-10 bg-[#dcf0ff] p-10 rounded-xl sm:w-52 sm:mb-32 ">
       <img
-        className="absolute w-28 -top-14 -left-10 opacity-0 duration-300 group-hover:opacity-100"
+        className="absolute duration-300 opacity-0 w-28 -top-14 -left-10 group-hover:opacity-100"
         src={dev}
         alt=""
       />
@@ -12,10 +12,10 @@ const TestimonialCard = ({ image, title, description, dev }) => {
         src={image}
         alt=""
       />
-      <p className="name group-hover:scale-110 group-hover:-translate-y-3 duration-300 text-xl font-semibold">
+      <p className="text-xl font-semibold duration-300 name group-hover:scale-110 group-hover:-translate-y-3">
         {title}
       </p>
-      <p className="text-black/60 z-10 group-hover:text-black">{description}</p>
+      <p className="z-10 text-black/60 group-hover:text-black">{description}</p>
     </div>
   );
 };

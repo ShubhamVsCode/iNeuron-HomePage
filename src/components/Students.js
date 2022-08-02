@@ -15,13 +15,13 @@ import ShowcaseCard from "./ShowcaseCard";
 
 const Students = () => {
   return (
-    <div className="h-screen my-10 text-center">
-      <h1 className="py-12 text-5xl font-semibold text-ineuron group ">
+    <div className="my-10 text-center ">
+      <h1 className="py-12 text-5xl font-semibold sm:text-3xl text-ineuron group ">
         "Pure Hardwork, No Shortcuts!"
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
-      <div className="flex justify-between mx-40 mt-20 card-container">
+      <div className="flex justify-between mx-40 mt-20 sm:mt-5 sm:flex-col sm:mx-7 sm:gap-10 sm: card-container">
         <ShowcaseCard
           Heading="10000+"
           Description="Job Interview Cracked"
@@ -39,12 +39,12 @@ const Students = () => {
         />
       </div>
 
-      <h1 className="text-5xl text-[#343434]  mt-28 group font-semibold py-12 ">
+      <h1 className="text-5xl text-[#343434] sm:text-3xl mt-28 group font-semibold py-12 ">
         "Hall of fame"
-        <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
+        <div className="h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
-      <div className="flex items-center justify-between mx-40 mt-24 space-x-20 sm:hidden sm:w-screen testimonial-card-container">
+      <div className="flex items-center justify-between mx-40 mt-24 space-x-20 sm:flex-col sm:mt-14 sm:mx-auto sm:space-x-0 sm:w-screen ">
         <TestimonialCard
           image={person1}
           title="Johnas Sam"

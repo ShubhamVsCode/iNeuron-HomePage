@@ -8,15 +8,15 @@ import NuemorphicCard from "./NeumorphicCard";
 
 const WhatYouLearn = () => {
   return (
-    <div className="h-screen" id="getStarted">
-      <h1 className="text-5xl text-[#343434] mt-[26rem] pt-8  mx-auto text-center group font-semibold  ">
+    <div className="sm:" id="getStarted">
+      <h1 className="text-5xl text-[#343434] mt-16 sm:mt-0 sm:text-3xl pt-8 sm:pt-0 mx-auto text-center group font-semibold  ">
         "What you will learn"
         <div className=" h-[3px] w-32 transition-all duration-150 ease-in-out group-hover:w-56 bg-[#ef9516] mx-auto mt-2"></div>
       </h1>
 
       {/* flex items-center mx-auto justify-center bg-slate-300 */}
 
-      <div className="flex justify-center mx-auto mt-10">
+      <div className="flex justify-center mx-auto mt-10 sm:hidden">
         <div class="segmented-control">
           <input type="radio" name="radio" id="tab-1" />
           <label htmlFor="tab-1" class="segmented-control__1">
@@ -37,7 +37,7 @@ const WhatYouLearn = () => {
         </div>
       </div>
 
-      <div className="flex mt-20 space-x-10 card-container mx-28">
+      <div className="flex mt-20 space-x-10 sm:mt-14 sm:space-x-0 sm:space-y-14 sm:mx-7 sm:flex-col card-container mx-28">
         <NuemorphicCard
           image={course1}
           title="DSA for FAANG preparation with Python and JavaScript"

@@ -8,10 +8,10 @@ import facebook from "../assets/footer/facebook.png";
 
 const Footer = () => {
   return (
-    <div className="box-border flex justify-around w-full gap-20 px-32 py-16 mt-40 text-white footer bg-ineuron h-96">
-      <div className="space-y-10 w-[26rem]">
+    <div className="box-border flex justify-around w-full gap-20 px-32 py-16 mt-40 text-white sm:px-5 sm:flex-col footer bg-ineuron h-96 sm:h-auto">
+      <div className="space-y-10 sm:w-auto w-[26rem]">
         <div className="flex items-center justify-between">
-          <img src={logo} alt="" />
+          <img src={logo} className="h-10" alt="" />
           <div className="flex">
             <img src={facebook} className="w-10 p-2" alt="" />
             <img src={linkedin} className="w-10 p-2" alt="" />
@@ -23,15 +23,15 @@ const Footer = () => {
           <div className="flex text-lg font-light ">
             <img
               src={location}
-              className="inline-block w-10 h-10 p-2 mr-5 bg-white rounded-full"
+              className="inline-block w-10 h-10 p-2 mr-5 bg-white rounded-full "
               alt=""
             />
-            <p>
+            <p className="sm:text-sm">
               17th Floor Tower A, Brigade Signature Towers, Sannatammanahalli,
               Bengaluru, Karnataka 562129.
             </p>
           </div>
-          <div className="flex items-center text-lg font-light">
+          <div className="flex items-center text-lg font-light sm:text-sm">
             <img
               src={email}
               className="inline-block w-10 h-10 p-2 mr-5 bg-white rounded-full"
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="order-1 ">
         <p className="mb-6 text-3xl font-semibold ">Company</p>
         <div className="flex gap-6">
           <ul className="flex flex-col gap-6 text-left">

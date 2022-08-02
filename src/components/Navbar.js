@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between py-6 pl-6 mx-32 sm:w-screen sm:bg-black navbar">
-        <img className="h-10" id="logo" src={logo} alt="" />
+      <div className="flex items-center justify-between py-6 mx-32 sm:py-4 sm:mx-auto sm:w-screen navbar">
+        <img className="h-10 sm:h-8 sm:mx-auto" id="logo" src={logo} alt="" />
 
         <div id="searchBox" className="search">
           <svg
@@ -57,7 +57,7 @@ const Navbar = () => {
             placeholder="What do you want to learn?"
           />
         </div>
-        <div className="flex nav__buttons space-x-7">
+        <div className="flex nav__buttons space-x-7 sm:hidden">
           <button className="btn btn__secondary">Sign Up</button>
           <button className="btn btn__primary">Sign in</button>
         </div>
