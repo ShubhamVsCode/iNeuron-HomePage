@@ -54,7 +54,7 @@ const Students = () => {
         <TestimonialCard
           image={person2}
           title="Richard"
-          description="A few days back I was scheduled for an interview at ECOLABS. Thanks to Naveen Reddy sir and his wonderful Youtube channel. Thanks sir"
+          description="A few days back I was scheduled for an interview at ECOLABS. Thanks to Naveen Reddy sir and his wonderful Youtube channel Thanks "
           dev={css}
         />
         <TestimonialCard
