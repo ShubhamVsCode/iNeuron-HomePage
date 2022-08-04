@@ -48,13 +48,13 @@ const Students = () => {
         <TestimonialCard
           image={person1}
           title="Johnas Sam"
-          description="I was following Krish Sir YouTube channel for more than 2-3 year."
+          description="I was following Krish Sir YouTube channel for more than 2-3 year.I recently get placed for position of Program Manager on 60 LPA package"
           dev={js}
         />
         <TestimonialCard
           image={person2}
           title="Richard"
-          description="A few days back I was scheduled for an interview at ECOLABS. Thanks to Naveen Reddy sir and his wonderful Youtube channel"
+          description="A few days back I was scheduled for an interview at ECOLABS. Thanks to Naveen Reddy sir and his wonderful Youtube channel. Thanks sir"
           dev={css}
         />
         <TestimonialCard
@@ -66,7 +66,7 @@ const Students = () => {
         <TestimonialCard
           image={person4}
           title="Amanda Richard"
-          description="B. Tech Computer Science and Engineering from Bundelkhand University, Jhansi. I recently get placed in Wells Fargo for the position of Program Associate on 20 LPA package."
+          description="B. Tech Computer Science and Engineering. I recently get placed in Wells Fargo for the position of Program Associate on 20 LPA package."
           dev={ts}
         />
       </div>
