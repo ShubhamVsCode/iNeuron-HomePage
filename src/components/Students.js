@@ -60,7 +60,7 @@ const Students = () => {
         <TestimonialCard
           image={person3}
           title="Alex Andres"
-          description="I have enrolled for your ML course two years back ,Python you taught in that I have cracked about 5 interview and concepts were also so much cleared ."
+          description="I have enrolled for your ML course two years back, Python you taught in that I have cracked 5 interview and concepts were so much cleared."
           dev={ether}
         />
         <TestimonialCard
